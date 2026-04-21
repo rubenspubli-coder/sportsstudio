@@ -1130,7 +1130,7 @@ async function runUpscale() {
   const upscalePrompt = `same exact image composition preserved, no changes to subject, pose, expression, framing or elements, only upscale and enhance quality, ultra high resolution refinement, enhance skin texture with realistic pores and natural imperfections, improve micro details and sharpness without altering original features, subtle lighting enhancement with balanced highlights and soft shadows, maintain original colors and tones, preserve identity and proportions exactly, increase clarity and depth, remove noise and compression artifacts, 8K ultra realistic, high sharpness, high contrast, professional lighting with realistic shadows and highlights, no alterations, no added elements, no modified composition, no style change, no text, no watermark, no blur, no distortion, no low quality, no cartoonish style`;
 
   try {
-    const res = await fetch('http://127.0.0.1:8001/', {
+    const res = await fetch('/api/proxy', {
       method: 'POST',
       headers: {'Content-Type':'application/json','x-api-key':API_KEY,'anthropic-version':'2023-06-01'},
       body: JSON.stringify({
