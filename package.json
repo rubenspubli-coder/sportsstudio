@@ -1,0 +1,9 @@
+{
+  "name": "sports-studio",
+  "version": "1.0.0",
+  "description": "Sports Studio - AI Image Prompt Generator",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'No build needed'"
+  }
+}
